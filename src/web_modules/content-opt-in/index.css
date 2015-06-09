@@ -10,7 +10,7 @@
 .ContentOptIn h2,
 .ContentOptIn h3,
 .ContentOptIn h4 {
-  font-family: PT Sans, serif;
+  font-family: "PT Sans", serif;
   font-feature-settings: "liga" 1, "kern";
   font-weight: bold;
 }
@@ -35,17 +35,12 @@
   font-size: 1.5rem;
 }
 
-.ContentOptIn h3 code {
-  font-weight: normal;
-  font-size: 1.125rem;
-}
-
 .ContentOptIn h4 {
   font-size: 1.125rem;
 }
 
 .ContentOptIn p {
-  font-family: PT Serif, serif;
+  font-family: "PT Serif", serif;
   font-feature-settings: "liga" 1, "kern";
   line-height: 1.5;
 }
@@ -61,8 +56,7 @@
 .ContentOptIn code,
 .ContentOptIn pre {
   background: whitesmoke;
-  font-family: PT Mono, monospace;
-  font-size: 0.875rem;
+  font-family: "Anonymous Pro", monospace;
   line-height: 1.25;
 }
 
@@ -81,7 +75,7 @@
 }
 
 .ContentOptIn li {
-  font-family: PT Serif, serif;
+  font-family: "PT Serif", serif;
   font-feature-settings: "liga" 1, "kern";
   line-height: 1.5;
   margin-top: 0;

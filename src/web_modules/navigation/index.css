@@ -21,7 +21,7 @@
 .Navigation-itemInner {
   color: white;
   display: block;
-  font-family: PT Sans, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-feature-settings: "liga" 1, "kern";
   font-size: 0.875em;
   padding: 1em 5%;

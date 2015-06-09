@@ -29,7 +29,7 @@
 }
 
 .Header-item--menu {
-  font-family: PT Sans, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-feature-settings: "liga" 1, "kern";
   margin-left: auto;
   padding-top: 1.3em;

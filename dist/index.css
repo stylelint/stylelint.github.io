@@ -23,7 +23,7 @@ html {
   border-radius: 0 0 0.4em 0.4em;
   color: white;
   display: inline-block;
-  font-family: PT Sans, sans-serif;
+  font-family: "PT Sans", sans-serif;
   line-height: 1;
   margin-bottom: 1.5em;
   padding: 1em;
@@ -86,7 +86,7 @@ html {
 .ContentOptIn h2,
 .ContentOptIn h3,
 .ContentOptIn h4 {
-  font-family: PT Sans, serif;
+  font-family: "PT Sans", serif;
   -webkit-font-feature-settings: "liga" 1, "kern";
      -moz-font-feature-settings: "liga" 1, "kern";
           font-feature-settings: "liga" 1, "kern";
@@ -117,19 +117,13 @@ html {
   font-size: 1.5rem;
 }
 
-.ContentOptIn h3 code {
-  font-weight: normal;
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-
 .ContentOptIn h4 {
   font-size: 18px;
   font-size: 1.125rem;
 }
 
 .ContentOptIn p {
-  font-family: PT Serif, serif;
+  font-family: "PT Serif", serif;
   -webkit-font-feature-settings: "liga" 1, "kern";
      -moz-font-feature-settings: "liga" 1, "kern";
           font-feature-settings: "liga" 1, "kern";
@@ -147,9 +141,7 @@ html {
 .ContentOptIn code,
 .ContentOptIn pre {
   background: whitesmoke;
-  font-family: PT Mono, monospace;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-family: "Anonymous Pro", monospace;
   line-height: 1.25;
 }
 
@@ -168,7 +160,7 @@ html {
 }
 
 .ContentOptIn li {
-  font-family: PT Serif, serif;
+  font-family: "PT Serif", serif;
   -webkit-font-feature-settings: "liga" 1, "kern";
      -moz-font-feature-settings: "liga" 1, "kern";
           font-feature-settings: "liga" 1, "kern";
@@ -211,7 +203,7 @@ html {
 }
 
 .Header-item--menu {
-  font-family: PT Sans, sans-serif;
+  font-family: "PT Sans", sans-serif;
   -webkit-font-feature-settings: "liga" 1, "kern";
      -moz-font-feature-settings: "liga" 1, "kern";
           font-feature-settings: "liga" 1, "kern";
@@ -278,7 +270,7 @@ html {
 .Navigation-itemInner {
   color: white;
   display: block;
-  font-family: PT Sans, sans-serif;
+  font-family: "PT Sans", sans-serif;
   -webkit-font-feature-settings: "liga" 1, "kern";
      -moz-font-feature-settings: "liga" 1, "kern";
           font-feature-settings: "liga" 1, "kern";

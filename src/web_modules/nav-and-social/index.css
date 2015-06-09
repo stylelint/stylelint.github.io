@@ -1,0 +1,15 @@
+/**
+ * NavAndSocial
+ */
+
+@media (min-width: 50em) {
+
+  .NavAndSocial {
+    background: black;
+  }
+
+  .NavAndSocial-inner {
+    padding-right: 5%;
+    display: flex;
+  }
+}

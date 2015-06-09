@@ -1,0 +1,74 @@
+/**
+ * Navigation
+ */
+
+.Navigation {
+  background: black;
+}
+
+.Navigation-item {
+  border-bottom: 1px solid grey;
+  display: block;
+  list-style: none;
+}
+
+.Navigation-item.is-active {
+  border-bottom: 2px solid black /* limegreen */;
+}
+
+.Navigation-itemInner {
+  color: white;
+  display: block;
+  font-family: PT Sans, sans-serif;
+  font-feature-settings: "liga" 1, "kern";
+  font-size: 0.875em;
+  padding: 1em 5%;
+  text-decoration: none;
+}
+
+.Navigation-itemInner:hover {
+
+  /*, .Navigation-itemInner.is-active*/
+  color: limegreen;
+}
+
+.Navigation-itemInner::after {
+  content: ">";
+  float: right;
+  top: 0;
+}
+
+@media (min-width: 50em) {
+
+  .Navigation {
+    margin-left: auto;
+  }
+
+  .Navigation-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Navigation-item {
+    border-bottom: 0;
+    margin: 0 0.35em;
+  }
+
+  .Navigation-itemInner {
+    border-width: 0;
+    padding: 1.92em 0.6em;
+    position: relative;
+  }
+
+  .Navigation-itemInner::after {
+    color: white;
+    content: "\00B7";
+    position: absolute;
+    right: -0.5em;
+    top: auto;
+  }
+
+  .Navigation-itemInner--end::after {
+    display: none;
+  }
+}

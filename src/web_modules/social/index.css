@@ -1,0 +1,34 @@
+/**
+ * Social
+ */
+
+.Social {
+  background: black;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0.5em 5%;
+}
+
+.Social-item {
+  list-style: none;
+  padding-left: 0.5em;
+}
+
+.Social-itemInner {
+  color: white;
+  fill: currentColor;
+  text-decoration: none;
+}
+
+.Social-itemInner:hover {
+  color: limegreen;
+  fill: currentColor;
+}
+
+@media (min-width: 50em) {
+
+  .Social {
+    padding-right: 0;
+    padding-top: 1.4em;
+  }
+}

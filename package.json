@@ -1,0 +1,28 @@
+{
+  "name": "stylelintio",
+  "version": "0.0.0",
+  "description": "Stylelint website",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stylelint/stylelint.github.io.git"
+  },
+  "devDependencies": {
+    "babel": "^5.5.5",
+    "babel-eslint": "^3.1.14",
+    "cssnext": "^1.6.0",
+    "eslint": "^0.22.1",
+    "glob": "^5.0.10",
+    "postcss": "^4.1.11",
+    "postcss-log-warnings": "^0.3.1",
+    "stylelint": "stylelint/stylelint"
+  },
+  "scripts": {
+    "_lint-css": "babel-node scripts/lint-css",
+    "build-css": "cssnext src/index.css dist/index.css",
+    "lint": "npm run lint-js && npm run lint-css",
+    "lint-css": "npm run _lint-css --stylelintio:src=src/**/*.css",
+    "lint-js": "eslint . --ignore-path .gitignore",
+    "postinstall": "cd node_modules/stylelint && npm i && cd ../.."
+  }
+}

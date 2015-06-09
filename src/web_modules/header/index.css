@@ -1,0 +1,55 @@
+/**
+ * Header
+ */
+
+.Header {
+  background: black;
+  margin: 0;
+  padding: 0 5%;
+}
+
+.Header-inner {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.Header-item {
+  color: white;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.Header-item--logo {
+  font-family: Niconne, cursive;
+  font-feature-settings: "liga" 1, "kern";
+  font-size: 2.5em;
+  padding: 0.15em 0 0.3em 0;
+}
+
+.Header-item--menu {
+  font-family: PT Sans, sans-serif;
+  font-feature-settings: "liga" 1, "kern";
+  margin-left: auto;
+  padding-top: 1.3em;
+}
+
+.Header-item:hover {
+  color: limegreen;
+}
+
+@media (min-width: 50em) {
+
+  .Header {
+    padding: 0.5em 0;
+  }
+
+  .Header-inner {
+    padding-left: 5%;
+  }
+
+  .Header-item--menu {
+    display: none;
+  }
+}

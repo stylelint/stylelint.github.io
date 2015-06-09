@@ -128,8 +128,6 @@ html {
   font-size: 1.125rem;
 }
 
-
-
 .ContentOptIn p {
   font-family: PT Serif, serif;
   -webkit-font-feature-settings: "liga" 1, "kern";
@@ -271,9 +269,11 @@ html {
   list-style: none;
 }
 
+/*
 .Navigation-item.is-active {
-  border-bottom: 2px solid black /* limegreen */;
+  border-bottom: 2px solid limegreen;
 }
+*/
 
 .Navigation-itemInner {
   color: white;
@@ -288,6 +288,7 @@ html {
 }
 
 .Navigation-itemInner:hover {
+
   /*, .Navigation-itemInner.is-active*/
   color: limegreen;
 }
@@ -316,7 +317,7 @@ html {
   }
 
   .Navigation-item {
-    border-bottom: 0;
+    border-bottom: 2px solid black;
     margin: 0 0.35em;
   }
 

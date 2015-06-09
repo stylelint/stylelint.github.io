@@ -141,15 +141,11 @@ html {
 .ContentOptIn code,
 .ContentOptIn pre {
   background: whitesmoke;
-  font-family: "Anonymous Pro", monospace;
-  line-height: 1.25;
-}
-
-.ContentOptIn code {
-  padding: 0.25em;
+  font-family: "Inconsolata", monospace;
 }
 
 .ContentOptIn pre {
+  line-height: 1.25;
   overflow: auto;
   padding: 1em;
 }

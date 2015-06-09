@@ -65,8 +65,13 @@
     var repo = "https://stylelint.github.io/";
     var rawgit = "https://rawgit.com/stylelint/stylelint/master/";
 
+    var md = window.markdownit();
+
     // live node list
     var links = document.getElementsByTagName("a");
+    var code = document.getElementsByTagName("code");
+    var content = document.querySelector("#js-content");
+
 
     // load readme
     fetchAndDisplayMd(rawgit + "README.md")
@@ -77,18 +82,15 @@
       .then(function(response) {
         return response.text()
       }).then(function(body) {
-        var md = window.markdownit();
+
         var result = md.render(body);
-        var content = document.querySelector("#js-content");
-        var code = document.querySelectorAll("pre code");
 
         // display content
         content.innerHTML = result;
 
         // code highlight
-        for (i = 0; i < code.length; ++i) {
-          console.log(code[i]);
-          hljs.highlightBlock(code[i]);
+        for (j = 0; j < code.length; ++j) {
+          hljs.highlightBlock(code[j]);
         }
 
         // add addEventListener to links

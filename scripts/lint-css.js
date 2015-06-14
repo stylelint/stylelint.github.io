@@ -27,8 +27,6 @@ files.forEach(function (file) {
         "declaration-bang-space-before": [ 2, "always" ],
         "declaration-colon-space-after": [ 2, "always" ],
         "declaration-colon-space-before": [ 2, "never" ],
-        "declaration-comma-space-after": [ 2, "always" ],
-        "declaration-comma-space-before": [ 2, "never" ],
         "function-calc-no-unspaced-operator": 2,
         "function-comma-space-after": [ 2, "always" ],
         "function-comma-space-before": [ 2, "never" ],
@@ -55,7 +53,6 @@ files.forEach(function (file) {
         "number-no-trailing-zeros": 2,
         "number-zero-length-no-unit": 2,
         "property-no-vendor-prefix": 2,
-        "property-value-no-vendor-prefix": 2,
         "root-no-standard-properties": 2,
         "rule-nested-empty-line-before": [ 2, "always-multi-line" ],
         "rule-non-nested-empty-line-before": [ 2, "always-multi-line" ],
@@ -71,10 +68,13 @@ files.forEach(function (file) {
         "selector-pseudo-element-colon-notation": [ 2, "double" ],
         "selector-root-no-composition": 2,
         "string-quotes": [ 2, "double" ],
+        "value-list-comma-space-after": [ 2, "always" ],
+        "value-list-comma-space-before": [ 2, "never" ],
+        "value-no-vendor-prefix": 2,
       },
     }),
     logWarnings(),
    ])
   .process(css, { from: file })
-  .then(function () {})
+  .then()
 })

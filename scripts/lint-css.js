@@ -12,7 +12,7 @@ files.forEach(function (file) {
   postcss([
     stylelint({
       "rules": {
-        "at-rule-empty-line-before": [ 2, "always" ],
+        "at-rule-empty-line-before": [ 2, "always-except-blockless-pair" ],
         "at-rule-no-vendor-prefix": 2,
         "block-closing-brace-newline-after": [ 2, "always" ],
         "block-closing-brace-newline-before": [ 2, "always-multi-line" ],
@@ -30,7 +30,7 @@ files.forEach(function (file) {
         "function-calc-no-unspaced-operator": 2,
         "function-comma-space-after": [ 2, "always" ],
         "function-comma-space-before": [ 2, "never" ],
-        "function-parentheses-inside-space": [ 2, "never" ],
+        "function-parentheses-space-inside": [ 2, "never" ],
         "function-space-after": [ 2, "always" ],
         "function-token-no-space": 2,
         "function-url-quotes": [ 2, "double" ],
@@ -45,7 +45,7 @@ files.forEach(function (file) {
         "media-feature-range-operator-space-before": [ 2, "always" ],
         "media-query-list-comma-space-after": [ 2, "always" ],
         "media-query-list-comma-space-before": [ 2, "never" ],
-        "media-query-parentheses-inside-space": [ 2, "never" ],
+        "media-query-parentheses-space-inside": [ 2, "never" ],
         "no-eol-whitespace": 2,
         "no-missing-eof-newline": 2,
         "no-multiple-empty-lines": 2,
@@ -54,8 +54,9 @@ files.forEach(function (file) {
         "number-zero-length-no-unit": 2,
         "property-no-vendor-prefix": 2,
         "root-no-standard-properties": 2,
-        "rule-nested-empty-line-before": [ 2, "always-multi-line" ],
+        "rule-nested-empty-line-before": [ 2, "always-multi-line-except-first" ],
         "rule-non-nested-empty-line-before": [ 2, "always-multi-line" ],
+        "rule-properties-order": [2, "alphabetical"],
         "rule-semicolon-newline-after": [ 2, "always-multi-line" ],
         "rule-semicolon-space-after": [ 2, "always-single-line" ],
         "rule-semicolon-space-before": [ 2, "never" ],
@@ -68,7 +69,8 @@ files.forEach(function (file) {
         "selector-pseudo-element-colon-notation": [ 2, "double" ],
         "selector-root-no-composition": 2,
         "string-quotes": [ 2, "double" ],
-        "value-list-comma-space-after": [ 2, "always" ],
+        "value-list-comma-newline-after": [ 2, "always-multi-line" ],
+        "value-list-comma-space-after": [ 2, "always-single-line" ],
         "value-list-comma-space-before": [ 2, "never" ],
         "value-no-vendor-prefix": 2,
       },
@@ -77,4 +79,5 @@ files.forEach(function (file) {
    ])
   .process(css, { from: file })
   .then()
+  .catch(err => console.error(err.stack))
 })

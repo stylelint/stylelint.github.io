@@ -20,7 +20,6 @@
 }
 
 @media (min-width: 50em) {
-
   .Chrome {
     display: flex;
     flex-wrap: wrap;

@@ -12,7 +12,7 @@ files.forEach(function (file) {
   postcss([
     stylelint({
       "rules": {
-        "at-rule-empty-line-before": [ 2, "always-except-blockless-pair" ],
+        "at-rule-empty-line-before": [ 2, "always-except-blockless-group" ],
         "at-rule-no-vendor-prefix": 2,
         "block-closing-brace-newline-after": [ 2, "always" ],
         "block-closing-brace-newline-before": [ 2, "always-multi-line" ],

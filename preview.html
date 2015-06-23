@@ -22,10 +22,10 @@
   </div>
   <main class="Chrome-main" role="main">
     <header class="Chrome-sectionTitle">
-      Preview version
+      Pre-release version
     </header>
     <div class="ContentOptIn" id="js-content">
-      <a href="https://github.com/stylelint/stylelint/">Docs</a>
+      <a href="https://github.com/stylelint/stylelint/">View docs on github</a>
     </div>
   </main>
   <div class="Chrome-navAndSocial">
@@ -72,9 +72,18 @@
     var code = document.getElementsByTagName("pre");
     var content = document.querySelector("#js-content");
 
+    // load readm
+    var query = window.location.search;
+    if (query) {
+      fetchAndDisplayMd(decodeURIComponent(query.replace("?", "")))
+    } else {
+      fetchAndDisplayMd(rawgit + "README.md")
+    }
 
-    // load readme
-    fetchAndDisplayMd(rawgit + "README.md")
+    window.addEventListener('popstate', function (event) {
+      console.log(event);
+      fetchAndDisplayMd(decodeURIComponent(event.state))
+    });
 
     function fetchAndDisplayMd(url) {
 
@@ -82,6 +91,8 @@
       .then(function(response) {
         return response.text()
       }).then(function(body) {
+
+        history.pushState(encodeURIComponent(url), null, "?" + encodeURIComponent(url));
 
         var result = md.render(body);
 

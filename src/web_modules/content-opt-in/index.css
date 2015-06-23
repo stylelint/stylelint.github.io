@@ -9,7 +9,9 @@
 .ContentOptIn h1,
 .ContentOptIn h2,
 .ContentOptIn h3,
-.ContentOptIn h4 {
+.ContentOptIn h4,
+.ContentOptIn h5,
+.ContentOptIn h6 {
   font-family: "PT Sans", serif;
   font-feature-settings: "liga" 1, "kern";
   font-weight: bold;
@@ -31,12 +33,16 @@
   font-size: 1.5rem;
 }
 
-.ContentOptIn h3 {
-  font-size: 1.5rem;
+.ContentOptIn h4 {
+  font-size: 1.25rem;
 }
 
-.ContentOptIn h4 {
+.ContentOptIn h5 {
   font-size: 1.125rem;
+}
+
+.ContentOptIn h6 {
+  font-size: 1rem;
 }
 
 .ContentOptIn p {

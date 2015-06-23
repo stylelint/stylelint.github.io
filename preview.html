@@ -15,7 +15,7 @@
   <div class="Chrome-header">
     <header class="Header" id="banner" role="banner">
       <p class="Header-inner">
-        <a class="Header-item Header-item--logo" href="#">stylelint</a>
+        <a class="Header-item Header-item--logo" href="https://rawgit.com/stylelint/stylelint/master/README.md">stylelint</a>
         <a class="Header-item Header-item--menu" href="#navigation">&#9776; Menu</a>
       </p>
     </header>
@@ -37,10 +37,10 @@
               <a class="Navigation-itemInner is-active" href="https://rawgit.com/stylelint/stylelint/master/docs/rules.md">Rules</a>
             </li>
             <li class="Navigation-item">
-              <a class="Navigation-itemInner" href="https://rawgit.com/stylelint/stylelint/master/docs/adding-a-new-rule.md">Adding a new rule</a>
+              <a class="Navigation-itemInner" href="https://rawgit.com/stylelint/stylelint/master/docs/user-guide.md">User guide</a>
             </li>
             <li class="Navigation-item">
-              <a class="Navigation-itemInner Navigation-itemInner--end" href="https://rawgit.com/stylelint/stylelint/master/docs/rule-guidelines.md">Rule guidelines</a>
+              <a class="Navigation-itemInner Navigation-itemInner--end" href="https://rawgit.com/stylelint/stylelint/master/docs/developer-guide.md">Developer guide</a>
             </li>
           </ul>
         </nav>
@@ -72,7 +72,7 @@
     var code = document.getElementsByTagName("pre");
     var content = document.querySelector("#js-content");
 
-    // load readm
+    // load md or readme
     var query = window.location.search;
     if (query) {
       fetchAndDisplayMd(decodeURIComponent(query.replace("?", "")))
@@ -80,8 +80,8 @@
       fetchAndDisplayMd(rawgit + "README.md")
     }
 
+    // listen to popstate
     window.addEventListener('popstate', function (event) {
-      console.log(event);
       fetchAndDisplayMd(decodeURIComponent(event.state))
     });
 
@@ -92,6 +92,7 @@
         return response.text()
       }).then(function(body) {
 
+        // push history
         history.pushState(encodeURIComponent(url), null, "?" + encodeURIComponent(url));
 
         var result = md.render(body);

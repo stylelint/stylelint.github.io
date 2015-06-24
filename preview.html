@@ -62,8 +62,8 @@
 <script>
   (function() {
 
-    var repo = "https://stylelint.github.io/";
-    var rawgit = "https://rawgit.com/stylelint/stylelint/master/";
+    var repo = "stylelint.github.io/";
+    var rawgit = "rawgit.com/stylelint/stylelint/master/";
 
     var md = window.markdownit();
 
@@ -77,7 +77,7 @@
     if (query) {
       fetchAndDisplayMd(decodeURIComponent(query.replace("?", "")))
     } else {
-      fetchAndDisplayMd(rawgit + "README.md")
+      fetchAndDisplayMd("http://" + rawgit + "README.md")
     }
 
     // listen to popstate
@@ -92,43 +92,46 @@
         return response.text()
       }).then(function(body) {
 
-        // push history
-        history.pushState(encodeURIComponent(url), null, "?" + encodeURIComponent(url));
-
         var result = md.render(body);
 
         // display content
         content.innerHTML = result;
 
         // code highlight
-        for (j = 0; j < code.length; ++j) {
+        for (var j = 0; j < code.length; ++j) {
           hljs.highlightBlock(code[j]);
         }
 
         // add addEventListener to links
-        for (i = 0; i < links.length; ++i) {
-
-          links[i].addEventListener('click', function(e) {
-
-            var href = e.target.href;
-
-            if (href === undefined) {
-              href = e.target.parentNode.href;
-            }
-
-            // behave normally if not linking to md file
-            if (href.indexOf(".md") === -1) {
-              return
-            }
-
-            content.innerHTML = "";
-            e.preventDefault();
-            window.scrollTo(0,0);
-            fetchAndDisplayMd(href.replace(repo, rawgit));
-
-          }, false);
+        for (var i = 0; i < links.length; ++i) {
+          links[i].removeEventListener('click', onClick, false);
+          links[i].addEventListener('click', onClick, false);
         }
       });
+    }
+
+    function onClick(e) {
+      var href = e.target.href;
+
+      if (href === undefined) {
+        href = e.target.parentNode.href;
+      }
+
+      // behave normally if not linking to md file
+      if (href.indexOf(".md") === -1) {
+        return
+      }
+
+      content.innerHTML = "";
+      e.preventDefault();
+      window.scrollTo(0,0);
+
+      href = href.replace(repo, rawgit);
+
+      // push history
+      history.pushState(encodeURIComponent(href), null, "?" + encodeURIComponent(href));
+
+      fetchAndDisplayMd(href);
     }
   })();
   </script>

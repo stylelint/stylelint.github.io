@@ -72,12 +72,12 @@
     var code = document.getElementsByTagName("pre");
     var content = document.querySelector("#js-content");
 
-    // load md or readme
+    // load quiery string md or readme
     var query = window.location.search;
     if (query) {
       fetchAndDisplayMd(decodeURIComponent(query.replace("?", "")))
     } else {
-      fetchAndDisplayMd("http://" + rawgit + "README.md")
+      fetchAndDisplayMd(document.location.protocol + "//" + rawgit + "README.md")
     }
 
     // listen to popstate

@@ -14,7 +14,7 @@
     "eslint": "^0.23.0",
     "glob": "^5.0.10",
     "postcss": "^4.1.13",
-    "postcss-log-warnings": "^0.3.1",
+    "postcss-reporter": "^0.1.0",
     "stylelint": "stylelint/stylelint"
   },
   "scripts": {

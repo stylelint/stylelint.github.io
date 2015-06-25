@@ -1,6 +1,6 @@
 import fs from "fs"
 import glob from "glob"
-import logWarnings from "postcss-log-warnings"
+import reporter from "postcss-reporter"
 import postcss from "postcss"
 import stylelint from "stylelint"
 
@@ -12,7 +12,9 @@ files.forEach(function (file) {
   postcss([
     stylelint({
       "rules": {
-        "at-rule-empty-line-before": [ 2, "always-except-blockless-group" ],
+        "at-rule-empty-line-before": [ 2, "always", {
+          except: ["blockless-group"]
+        } ],
         "at-rule-no-vendor-prefix": 2,
         "block-closing-brace-newline-after": [ 2, "always" ],
         "block-closing-brace-newline-before": [ 2, "always-multi-line" ],
@@ -22,9 +24,12 @@ files.forEach(function (file) {
         "block-opening-brace-space-after": [ 2, "always-single-line" ],
         "block-opening-brace-space-before": [ 2, "always" ],
         "color-no-invalid-hex": 2,
-        "comment-empty-line-before": [ 2, "always-except-inline" ],
+        "comment-empty-line-before": [ 2, "always" ],
         "declaration-bang-space-after": [ 2, "never" ],
         "declaration-bang-space-before": [ 2, "always" ],
+        "declaration-block-semicolon-newline-after": [ 2, "always-multi-line" ],
+        "declaration-block-semicolon-space-after": [ 2, "always-single-line" ],
+        "declaration-block-semicolon-space-before": [ 2, "never" ],
         "declaration-colon-space-after": [ 2, "always" ],
         "declaration-colon-space-before": [ 2, "never" ],
         "function-calc-no-unspaced-operator": 2,
@@ -34,11 +39,7 @@ files.forEach(function (file) {
         "function-space-after": [ 2, "always" ],
         "function-token-no-space": 2,
         "function-url-quotes": [ 2, "double" ],
-        "indentation": [ 2, {
-          space: 2,
-          block: "always",
-          value: "always",
-        }, ],
+        "indentation": [ 2, 2 ],
         "media-feature-colon-space-after": [ 2, "always" ],
         "media-feature-colon-space-before": [ 2, "never" ],
         "media-feature-range-operator-space-after": [ 2, "always" ],
@@ -54,12 +55,11 @@ files.forEach(function (file) {
         "number-zero-length-no-unit": 2,
         "property-no-vendor-prefix": 2,
         "root-no-standard-properties": 2,
-        "rule-nested-empty-line-before": [ 2, "always-multi-line-except-first" ],
+        "rule-nested-empty-line-before": [ 2, "always-multi-line", {
+          except: ["first-nested"]
+        } ],
         "rule-non-nested-empty-line-before": [ 2, "always-multi-line" ],
         "rule-properties-order": [2, "alphabetical"],
-        "rule-semicolon-newline-after": [ 2, "always-multi-line" ],
-        "rule-semicolon-space-after": [ 2, "always-single-line" ],
-        "rule-semicolon-space-before": [ 2, "never" ],
         "rule-trailing-semicolon": [ 2, "always" ],
         "selector-combinator-space-after": [ 2, "always" ],
         "selector-combinator-space-before": [ 2, "always" ],
@@ -75,7 +75,7 @@ files.forEach(function (file) {
         "value-no-vendor-prefix": 2,
       },
     }),
-    logWarnings(),
+    reporter(),
    ])
   .process(css, { from: file })
   .then()

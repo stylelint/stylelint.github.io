@@ -8,12 +8,12 @@
     "url": "https://github.com/stylelint/stylelint.github.io.git"
   },
   "devDependencies": {
-    "babel": "^5.5.5",
-    "babel-eslint": "^3.1.14",
-    "cssnext": "^1.6.0",
-    "eslint": "^0.22.1",
+    "babel": "^5.6.7",
+    "babel-eslint": "^3.1.18",
+    "cssnext": "^1.7.1",
+    "eslint": "^0.23.0",
     "glob": "^5.0.10",
-    "postcss": "^4.1.11",
+    "postcss": "^4.1.13",
     "postcss-log-warnings": "^0.3.1",
     "stylelint": "stylelint/stylelint"
   },

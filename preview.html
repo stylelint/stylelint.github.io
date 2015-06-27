@@ -19,13 +19,20 @@
     <header class="Header" id="banner" role="banner">
       <p class="Header-inner">
         <a class="Header-item Header-item--logo" href="https://rawgit.com/stylelint/stylelint/master/README.md">stylelint</a>
-        <a class="Header-item Header-item--menu" href="#navigation">&#9776; Menu</a>
+        <a class="Header-item Header-item--menu" href="#navigation" id="nav-jump">
+          <svg class="Header-menu" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+            <rect x="0" y="0" stroke-miterlimit="10" width="12" height="2"/>
+            <rect x="0" y="5" stroke-miterlimit="10" width="12" height="2"/>
+            <rect x="0" y="10" stroke-miterlimit="10" width="12" height="2"/>
+          </svg>
+          Menu
+        </a>
       </p>
     </header>
   </div>
   <main class="Chrome-main" role="main">
     <header class="Chrome-sectionTitle">
-      Pre-release version
+      master version
     </header>
     <div class="ContentOptIn" id="js-content">
       <a href="https://github.com/stylelint/stylelint/">View docs on github</a>
@@ -85,8 +92,15 @@
 
     // listen to popstate
     window.addEventListener('popstate', function (event) {
-      fetchAndDisplayMd(decodeURIComponent(event.state))
+      if (event.state.indexOf(".md") !== -1) {
+        fetchAndDisplayMd(decodeURIComponent(event.state))
+      }
     });
+
+    document.getElementById("nav-jump").addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo(0, document.body.scrollHeight);
+    })
 
     function fetchAndDisplayMd(url) {
 
@@ -107,8 +121,9 @@
 
         // add addEventListener to links
         for (var i = 0; i < links.length; ++i) {
-          links[i].removeEventListener('click', onClick, false);
-          links[i].addEventListener('click', onClick, false);
+          if (links[i].href.indexOf(".md") !== -1 && links[i].id !== "nav-jump") {
+            links[i].addEventListener('click', onClick, false);
+          }
         }
       });
     }
@@ -118,11 +133,6 @@
 
       if (href === undefined) {
         href = e.target.parentNode.href;
-      }
-
-      // behave normally if not linking to md file
-      if (href.indexOf(".md") === -1) {
-        return
       }
 
       content.innerHTML = "";

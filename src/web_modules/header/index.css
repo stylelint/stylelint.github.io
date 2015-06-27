@@ -39,6 +39,13 @@
   color: limegreen;
 }
 
+.Header-menu {
+  display: inline-block;
+  fill: currentColor;
+  height: 12px;
+  width: 12px;
+}
+
 @media (min-width: 50em) {
   .Header {
     padding: 0.5em 0;

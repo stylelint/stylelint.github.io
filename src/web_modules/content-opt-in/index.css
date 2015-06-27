@@ -51,6 +51,11 @@
   line-height: 1.5;
 }
 
+.ContentOptIn blockquote {
+  border-left: 3px solid gainsboro;
+  padding-left: 10px;
+}
+
 .ContentOptIn a {
   color: crimson;
 }

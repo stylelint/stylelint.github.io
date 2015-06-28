@@ -42,6 +42,7 @@ files.forEach(function (file) {
         "indentation": [ 2, 2 ],
         "media-feature-colon-space-after": [ 2, "always" ],
         "media-feature-colon-space-before": [ 2, "never" ],
+        "media-feature-name-no-vendor-prefix": 2,
         "media-feature-range-operator-space-after": [ 2, "always" ],
         "media-feature-range-operator-space-before": [ 2, "always" ],
         "media-query-list-comma-newline-after": [ 2, "always-multi-line" ],

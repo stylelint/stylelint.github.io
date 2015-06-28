@@ -15,7 +15,8 @@
     "glob": "^5.0.10",
     "postcss": "^4.1.13",
     "postcss-reporter": "^0.1.0",
-    "stylelint": "stylelint/stylelint"
+    "stylelint": "stylelint/stylelint",
+    "stylelint-config-suitcss": "stylelint/stylelint-config-suitcss"
   },
   "scripts": {
     "_lint-css": "babel-node scripts/lint-css",
@@ -23,6 +24,6 @@
     "lint": "npm run lint-js && npm run lint-css",
     "lint-css": "npm run _lint-css --stylelintio:src=src/**/*.css",
     "lint-js": "eslint . --ignore-path .gitignore",
-    "postinstall": "cd node_modules/stylelint && npm i && cd ../.."
+    "postinstall": "cd node_modules/stylelint && npm i && cd ../.. && cd node_modules/stylelint-config-suitcss && npm i && cd ../.."
   }
 }

@@ -1,4 +1,4 @@
 stylelint.github.io
 ===================
 
-Website of StyleLint
+Website of stylelint

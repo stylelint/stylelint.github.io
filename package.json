@@ -24,6 +24,6 @@
     "lint": "npm run lint-js && npm run lint-css",
     "lint-css": "npm run _lint-css --stylelintio:src=src/**/*.css",
     "lint-js": "eslint . --ignore-path .gitignore",
-    "postinstall": "cd node_modules/stylelint && npm i && cd ../.. && cd node_modules/stylelint-config-suitcss && npm i && cd ../.."
+    "postinstall": "cd node_modules/stylelint && npm i && cd ../.."
   }
 }

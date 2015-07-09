@@ -15,15 +15,14 @@
     "glob": "^5.0.10",
     "postcss": "^4.1.13",
     "postcss-reporter": "^0.1.0",
-    "stylelint": "stylelint/stylelint",
-    "stylelint-config-suitcss": "stylelint/stylelint-config-suitcss"
+    "stylelint": "^0.1.0",
+    "stylelint-config-suitcss": "^0.1.0"
   },
   "scripts": {
     "_lint-css": "babel-node scripts/lint-css",
     "build-css": "cssnext src/index.css dist/index.css",
     "lint": "npm run lint-js && npm run lint-css",
     "lint-css": "npm run _lint-css --stylelintio:src=src/**/*.css",
-    "lint-js": "eslint . --ignore-path .gitignore",
-    "postinstall": "cd node_modules/stylelint && npm i && cd ../.."
+    "lint-js": "eslint . --ignore-path .gitignore"
   }
 }

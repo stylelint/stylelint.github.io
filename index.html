@@ -84,7 +84,7 @@
 
     // load quiery string md or readme
     var query = window.location.search;
-    if (query) {
+    if (query && query.indexOf(".md") !== -1) {
       fetchAndDisplayMd(decodeURIComponent(query.replace("?", "")))
     } else {
       fetchAndDisplayMd(document.location.protocol + "//" + rawgit + "README.md")

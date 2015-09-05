@@ -13,7 +13,7 @@ files.forEach(function (file) {
   postcss([
     stylelint(configSuitcss),
     reporter(),
-   ])
+  ])
   .process(css, { from: file })
   .then()
   .catch(err => console.error(err.stack))

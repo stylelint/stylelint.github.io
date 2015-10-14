@@ -231,7 +231,7 @@ html {
 
 @media (min-width: 50em) {
   .Header {
-    padding: 0.5em 0;
+    padding: 9px 0 8px;
   }
 
   .Header-inner {

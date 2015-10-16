@@ -87,3 +87,8 @@
   line-height: 1.5;
   margin-top: 0;
 }
+
+.ContentOptIn img {
+  height: auto;
+  max-width: 100%;
+}

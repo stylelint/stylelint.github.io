@@ -138,16 +138,19 @@
         href = e.target.parentNode.href;
       }
 
-      content.innerHTML = "";
-      e.preventDefault();
-      window.scrollTo(0,0);
+      if (encodeURIComponent(href) !== window.location.href) {
 
-      href = href.replace(repo, rawgit);
+        content.innerHTML = "";
+        e.preventDefault();
+        window.scrollTo(0,0);
 
-      // push history
-      history.pushState(encodeURIComponent(href), null, "?" + encodeURIComponent(href));
+        href = href.replace(repo, rawgit);
 
-      fetchAndDisplayMd(href);
+        // push history
+        history.pushState(encodeURIComponent(href), null, "?" + encodeURIComponent(href));
+
+        fetchAndDisplayMd(href);
+      }
     }
   })();
   </script>

@@ -89,7 +89,7 @@
     // load quiery string md or readme
     var query = window.location.search;
     if (query && query.indexOf(".md") !== -1) {
-      fetchAndDisplayMd(decodeURIComponent(query.replace("?", "")))
+      fetchAndDisplayMd(document.location.protocol + "//" + rawgit + decodeURIComponent(query.replace("?", "")))
     } else {
       fetchAndDisplayMd(document.location.protocol + "//" + rawgit + "README.md")
     }
@@ -97,7 +97,7 @@
     // listen to popstate
     window.addEventListener('popstate', function (event) {
       if (event.state.indexOf(".md") !== -1) {
-        fetchAndDisplayMd(decodeURIComponent(event.state))
+        fetchAndDisplayMd(document.location.protocol + "//" + rawgit + decodeURIComponent(event.state))
       }
     });
 
@@ -146,9 +146,11 @@
         window.scrollTo(0,0);
 
         href = href.replace(repo, rawgit);
+        var url = href.replace("https://" + rawgit, "")
+        url = url.replace("http://" + rawgit, "")
 
         // push history
-        history.pushState(encodeURIComponent(href), null, "?" + encodeURIComponent(href));
+        history.pushState(encodeURIComponent(url), null, "?" + encodeURIComponent(url));
 
         fetchAndDisplayMd(href);
       }

@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>stylelint</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Inconsolata:400,700|PT+Serif:400,700,400italic,700italic|Niconne" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/tomorrow.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Niconne" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/github.min.css" rel="stylesheet">
   <link href="dist/index.css" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/4.2.1/markdown-it.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-  <script src="https://cdn.polyfill.io/v1/polyfill.js?features=fetch,Promise"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/5.0.0/markdown-it.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+  <script src="https://cdn.polyfill.io/v2/polyfill.js?features=fetch,Promise"></script>
   <!--
     This is a interim website. A hacky client-side script to load the project's markdown files off github.
   -->
@@ -79,6 +79,7 @@
     var rawgit = "cdn.rawgit.com/stylelint/stylelint/2.0.0/";
 
     var md = window.markdownit();
+    md.configure('commonmark');
 
     // live node list
     var links = document.getElementsByTagName("a");

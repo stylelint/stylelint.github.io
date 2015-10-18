@@ -150,7 +150,7 @@
         url = url.replace("http://" + rawgit, "")
 
         // push history
-        history.pushState(encodeURIComponent(url), null, "?" + encodeURIComponent(url));
+        history.pushState(encodeURIComponent(url), null, "?" + url);
 
         fetchAndDisplayMd(href);
       }

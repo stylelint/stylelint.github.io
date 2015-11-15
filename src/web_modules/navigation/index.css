@@ -30,7 +30,7 @@
 
 .Navigation-itemInner:hover {
 
-  /*, .Navigation-itemInner.is-active*/
+  /* , .Navigation-itemInner.is-active */
   color: limegreen;
 }
 

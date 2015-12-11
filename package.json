@@ -12,13 +12,25 @@
     "eslint": "^1.6.0",
     "eslint-config-stylelint": "^0.1.0",
     "stylelint": "^3.0.0",
-    "stylelint-config-suitcss": "^1.0.0",
-    "stylelint-selector-bem-pattern": "^0.1.3"
+    "stylelint-config-suitcss": "^2.0.0",
+    "stylelint-selector-bem-pattern": "^0.2.0"
   },
   "scripts": {
     "build-css": "cssnext src/index.css dist/index.css",
     "lint": "npm run lint-js && npm run lint-css",
     "lint-css": "stylelint src/**/*.css",
     "lint-js": "eslint . --ignore-path .gitignore"
+  },
+  "eslintConfig": {
+    "extends": ["stylelint"]
+  },
+  "stylelint": {
+    "extends": "stylelint-config-suitcss",
+    "plugins": [
+      "stylelint-selector-bem-pattern"
+    ],
+    "rules": {
+      "selector-bem-pattern": { "preset": "suit" }
+    }
   }
 }

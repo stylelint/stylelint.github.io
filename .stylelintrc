@@ -1,9 +1,0 @@
-{
-  "extends": "stylelint-config-suitcss",
-  "plugins": {
-    "selector-bem-pattern": "stylelint-selector-bem-pattern"
-  },
-  "rules": {
-    "selector-bem-pattern": [2, { "preset": "suit" }]
-  }
-}

@@ -5,18 +5,21 @@
 .Header {
   background: black;
   margin: 0;
-  padding: 0 5%;
+  padding: 0 1rem;
 }
 
 .Header-inner {
+  align-items: center;
   display: flex;
+  height: 3rem;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
 .Header-item {
   color: white;
-  display: inline-block;
+  display: block;
   line-height: 1;
   text-decoration: none;
 }
@@ -24,15 +27,15 @@
 .Header-item--logo {
   font-family: Niconne, cursive;
   font-feature-settings: "liga" 1, "kern";
-  font-size: 2.5em;
-  padding: 0.15em 0 0.3em 0;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .Header-item--menu {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-feature-settings: "liga" 1, "kern";
+  font-size: 0.875rem;
   margin-left: auto;
-  padding-top: 1.3em;
 }
 
 .Header-item:hover {
@@ -46,16 +49,17 @@
   width: 12px;
 }
 
-@media (min-width: 50em) {
-  .Header {
-    padding: 9px 0 8px;
-  }
-
+@media (min-width: 52em) {
   .Header-inner {
-    padding-left: 5%;
+    height: 4rem;
+    padding-left: 1.5rem;
   }
 
   .Header-item--menu {
     display: none;
+  }
+
+  .Header-item--logo {
+    font-size: 3rem;
   }
 }

@@ -3,15 +3,18 @@
  */
 
 .Social {
+  align-items: center;
   background: black;
   display: flex;
   flex-direction: row-reverse;
-  padding: 0.5em 5%;
+  height: 3rem;
+  justify-content: center;
+  padding-right: 1rem;
 }
 
 .Social-item {
   list-style: none;
-  padding-left: 0.5em;
+  padding-left: 0.5rem;
 }
 
 .Social-itemInner {
@@ -25,9 +28,9 @@
   fill: currentColor;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 52em) {
   .Social {
-    padding-right: 0;
-    padding-top: 1.4em;
+    height: 4rem;
+    margin-left: 1rem;
   }
 }

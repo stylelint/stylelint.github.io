@@ -2,13 +2,13 @@
  * @define NavAndSocial
  */
 
-@media (min-width: 50em) {
+@media (min-width: 52em) {
   .NavAndSocial {
     background: black;
   }
 
   .NavAndSocial-inner {
     display: flex;
-    padding-right: 5%;
+    padding-right: 1.5rem;
   }
 }

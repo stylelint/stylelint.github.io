@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>stylelint</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Niconne" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,400italic,700italic|Niconne|Cousine:400,700,400italic,700italic|Work+Sans:400,300" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/github-gist.min.css" rel="stylesheet">
   <link href="dist/index.css" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/5.1.0/markdown-it.min.js"></script>
@@ -45,15 +45,17 @@
           <ul class="Navigation-inner">
             <li class="Navigation-item">
               <a class="Navigation-itemInner" href="https://cdn.rawgit.com/stylelint/stylelint/3.2.1/docs/user-guide.md">User guide</a>
+              <ul class="Navigation-secondary">
+                <li class="Navigation-item Navigation-item--secondary is-active">
+                  <a class="Navigation-itemInner Navigation-itemInner--secondary" href="https://cdn.rawgit.com/stylelint/stylelint/3.2.1/docs/user-guide/rules.md">Rules</a>
+                </li>
+                <li class="Navigation-item Navigation-item--secondary">
+                  <a class="Navigation-itemInner Navigation-itemInner--secondary" href="https://cdn.rawgit.com/stylelint/stylelint/3.2.1/docs/user-guide/plugins.md">Plugins</a>
+                </li>
+              </ul>
             </li>
             <li class="Navigation-item">
               <a class="Navigation-itemInner" href="https://cdn.rawgit.com/stylelint/stylelint/3.2.1/docs/developer-guide.md">Developer guide</a>
-            </li>
-            <li class="Navigation-item is-active">
-              <a class="Navigation-itemInner" href="https://cdn.rawgit.com/stylelint/stylelint/3.2.1/docs/user-guide/rules.md">Rules</a>
-            </li>
-            <li class="Navigation-item">
-              <a class="Navigation-itemInner Navigation-itemInner--end" href="https://cdn.rawgit.com/stylelint/stylelint/3.2.1/docs/user-guide/plugins.md">Plugins</a>
             </li>
           </ul>
         </nav>
@@ -129,7 +131,6 @@
             links[i].addEventListener('click', onClick, false);
           }
           if (links[i].href.indexOf(".json") !== -1) {
-            console.log('x');
             links[i].addEventListener('click', function(e) {
               e.preventDefault();
               var location = document.createElement("a");

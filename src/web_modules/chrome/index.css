@@ -4,30 +4,35 @@
 
 .Chrome-main {
   margin: 0 auto;
-  max-width: 55em;
-  padding: 0 5% 2em 5%;
+  max-width: 52rem;
+  padding: 0 1rem;
 }
 
 .Chrome-sectionTitle {
   background: limegreen;
-  border-radius: 0 0 0.4em 0.4em;
+  border-radius: 0 0 0.25em 0.25em;
   color: white;
   display: inline-block;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.75rem;
   line-height: 1;
-  margin-bottom: 1.5em;
-  padding: 1em;
+  margin-bottom: 1.25em;
+  padding: 0.75em 0.5em;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 52em) {
   .Chrome {
     display: flex;
     flex-wrap: wrap;
   }
 
   .Chrome-header {
-    flex: 0 0 50%;
+    flex: 0 0 25%;
     order: 1;
+  }
+
+  .Chrome-sectionTitle {
+    font-size: 0.875rem;
   }
 
   .Chrome-main {
@@ -36,7 +41,7 @@
   }
 
   .Chrome-navAndSocial {
-    flex: 0 0 50%;
+    flex: 0 0 75%;
     order: 2;
   }
 }

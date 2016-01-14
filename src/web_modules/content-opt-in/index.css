@@ -3,7 +3,7 @@
  */
 
 .ContentOptIn * + * {
-  margin-top: 1.5em;
+  margin: 1em 0;
 }
 
 .ContentOptIn h1,
@@ -12,43 +12,46 @@
 .ContentOptIn h4,
 .ContentOptIn h5,
 .ContentOptIn h6 {
-  font-family: "PT Sans", serif;
+  color: color(black a(68%));
+  font-family: "Work Sans", sans-serif;
   font-feature-settings: "liga" 1, "kern";
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .ContentOptIn h1 {
-  font-size: 2.5rem;
-  line-height: 1;
+  font-size: 2.5em;
+  line-height: 1.125;
 }
 
 .ContentOptIn h2 {
   border-bottom: 1px solid gainsboro;
-  font-size: 1.875rem;
+  font-size: 1.875em;
   line-height: 1.25;
-  padding-bottom: 0.25em;
+  padding-bottom: 0.5rem;
 }
 
 .ContentOptIn h3 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .ContentOptIn h4 {
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 
 .ContentOptIn h5 {
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 
 .ContentOptIn h6 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .ContentOptIn p {
-  font-family: "PT Serif", serif;
+  color: color(black a(87%));
+  font-family: "Alegreya Sans", sans-serif;
   font-feature-settings: "liga" 1, "kern";
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.25;
 }
 
 .ContentOptIn blockquote {
@@ -67,12 +70,31 @@
 .ContentOptIn code,
 .ContentOptIn pre {
   background: whitesmoke;
+  font-family: Cousine, monospace;
+}
+
+.ContentOptIn code {
+  border: 1px solid gainsboro;
+  border-radius: 0.25em;
+  display: inline-block;
+  font-size: 0.714em;
+  font-weight: 400;
+  line-height: 1;
+  margin: -1px 0;
+  max-width: 100%;
+  padding: 0.188em;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+.ContentOptIn pre code {
+  border: 0;
+  line-height: 1.5;
 }
 
 .ContentOptIn pre {
-  line-height: 1.25;
+  line-height: 1.5;
   overflow: auto;
-  padding: 1em;
 }
 
 .ContentOptIn ul,
@@ -81,13 +103,25 @@
 }
 
 .ContentOptIn li {
-  font-family: "PT Serif", serif;
+  color: color(black a(87%));
+  font-family: "Alegreya Sans", sans-serif;
   font-feature-settings: "liga" 1, "kern";
-  line-height: 1.5;
-  margin-top: 0;
+  font-size: 1em;
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+}
+
+.ContentOptIn li:last-child {
+  margin-bottom: 0;
 }
 
 .ContentOptIn img {
   height: auto;
   max-width: 100%;
+}
+
+@media (min-width: 52em) {
+  .ContentOptIn {
+    font-size: 1.188rem;
+  }
 }

@@ -242,10 +242,6 @@ html {
   display: flex;
   height: 48px;
   height: 3rem;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0;
   padding: 0;
 }

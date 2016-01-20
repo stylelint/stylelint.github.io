@@ -11,7 +11,7 @@
     "cssnext": "^1.8.4",
     "eslint": "^1.6.0",
     "eslint-config-stylelint": "^0.1.0",
-    "stylelint": "^3.2.1",
+    "stylelint": "^4.0.0",
     "stylelint-config-suitcss": "^2.0.0",
     "stylelint-selector-bem-pattern": "^0.2.0"
   },
@@ -22,7 +22,9 @@
     "lint-js": "eslint . --ignore-path .gitignore"
   },
   "eslintConfig": {
-    "extends": ["stylelint"]
+    "extends": [
+      "stylelint"
+    ]
   },
   "stylelint": {
     "extends": "stylelint-config-suitcss",
@@ -30,7 +32,9 @@
       "stylelint-selector-bem-pattern"
     ],
     "rules": {
-      "selector-bem-pattern": { "preset": "suit" }
+      "selector-bem-pattern": {
+        "preset": "suit"
+      }
     }
   }
 }

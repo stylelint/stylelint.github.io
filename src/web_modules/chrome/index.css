@@ -36,9 +36,14 @@
     margin-bottom: 2.25em;
   }
 
-  .Chrome-main {
+  .Chrome-hero {
     flex: 0 0 100%;
     order: 3;
+  }
+
+  .Chrome-main {
+    flex: 0 0 100%;
+    order: 4;
   }
 
   .Chrome-navAndSocial {

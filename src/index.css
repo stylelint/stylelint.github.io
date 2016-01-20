@@ -11,6 +11,7 @@ html {
 @import "web_modules/chrome";
 @import "web_modules/content-opt-in";
 @import "web_modules/header";
+@import "web_modules/hero";
 @import "web_modules/nav-and-social";
 @import "web_modules/navigation";
 @import "web_modules/social";

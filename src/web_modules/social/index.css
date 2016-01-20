@@ -9,7 +9,7 @@
   flex-direction: row-reverse;
   height: 3rem;
   justify-content: center;
-  padding-right: 1rem;
+
 }
 
 .Social-item {
@@ -31,6 +31,6 @@
 @media (min-width: 52em) {
   .Social {
     height: 4rem;
-    margin-left: 1rem;
+    margin-left: 2.5rem;
   }
 }

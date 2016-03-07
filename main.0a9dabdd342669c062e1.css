@@ -1,0 +1,105 @@
+.web_modules-Header-index--root--qFm6k {
+  background: black;
+  margin: 0;
+  padding: 0 16px;
+  padding: 0 1rem;
+}
+
+.web_modules-Header-index--inner--podw4 {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+.web_modules-Header-index--item--1DYmU {
+  color: white;
+  display: block;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.web_modules-Header-index--logo--S47fx {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -5px;
+  text-decoration: none
+}
+
+.web_modules-Header-index--logo--S47fx:hover {
+  color: limegreen;
+}
+
+.web_modules-Header-index--tux--alOYC {
+  display: block;
+  fill: currentColor;
+  height: 34px;
+  width: 34px;
+}
+
+.web_modules-Header-index--name--3xqxF {
+  display: block;
+  font-family: Niconne, cursive;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+
+.web_modules-Header-index--menu--3eUK0 {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-feature-settings: "liga" 1, "kern";
+          font-feature-settings: "liga" 1, "kern";
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-left: auto;
+  text-decoration: none
+}
+
+.web_modules-Header-index--menu--3eUK0:hover {
+  color: limegreen;
+}
+
+.web_modules-Header-index--burger--3BfQx {
+  display: inline-block;
+  fill: currentColor;
+  height: 12px;
+  margin-right: 4px;
+  width: 12px;
+}
+
+@media (min-width: 48em) {
+  .web_modules-Header-index--root--qFm6k {
+    padding-left: 2rem;
+  }
+
+  .web_modules-Header-index--inner--podw4 {
+    height: 4rem;
+  }
+
+  .web_modules-Header-index--menu--3eUK0 {
+    display: none;
+  }
+}

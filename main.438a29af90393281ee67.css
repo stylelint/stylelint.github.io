@@ -1,0 +1,175 @@
+.web_modules-layouts-Page-index--root--22FV6 {
+  margin: 0 auto 32px auto;
+  margin: 0 auto 2rem auto;
+  max-width: 768px;
+  max-width: 48rem;
+  padding: 0 16px;
+  padding: 0 1rem
+}
+
+.web_modules-layouts-Page-index--root--22FV6 * + * {
+  margin: 1em 0
+}
+
+.web_modules-layouts-Page-index--root--22FV6 h1,
+.web_modules-layouts-Page-index--root--22FV6 h2,
+.web_modules-layouts-Page-index--root--22FV6 h3,
+.web_modules-layouts-Page-index--root--22FV6 h4,
+.web_modules-layouts-Page-index--root--22FV6 h5,
+.web_modules-layouts-Page-index--root--22FV6 h6 {
+  color: rgba(0, 0, 0, 0.68);
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-feature-settings: "liga" 1, "kern";
+          font-feature-settings: "liga" 1, "kern";
+  font-weight: 300;
+  line-height: 1.33;
+  position: relative
+}
+
+.web_modules-layouts-Page-index--root--22FV6 h1 .markdownIt-Anchor,
+.web_modules-layouts-Page-index--root--22FV6 h2 .markdownIt-Anchor,
+.web_modules-layouts-Page-index--root--22FV6 h3 .markdownIt-Anchor,
+.web_modules-layouts-Page-index--root--22FV6 h4 .markdownIt-Anchor,
+.web_modules-layouts-Page-index--root--22FV6 h5 .markdownIt-Anchor,
+.web_modules-layouts-Page-index--root--22FV6 h6 .markdownIt-Anchor {
+  display: none
+}
+
+.web_modules-layouts-Page-index--root--22FV6 h1:hover,
+.web_modules-layouts-Page-index--root--22FV6 h2:hover,
+.web_modules-layouts-Page-index--root--22FV6 h3:hover,
+.web_modules-layouts-Page-index--root--22FV6 h4:hover,
+.web_modules-layouts-Page-index--root--22FV6 h5:hover,
+.web_modules-layouts-Page-index--root--22FV6 h6:hover {}
+
+.web_modules-layouts-Page-index--root--22FV6 h1:hover .markdownIt-Anchor,
+.web_modules-layouts-Page-index--root--22FV6 h2:hover .markdownIt-Anchor,
+.web_modules-layouts-Page-index--root--22FV6 h3:hover .markdownIt-Anchor,
+.web_modules-layouts-Page-index--root--22FV6 h4:hover .markdownIt-Anchor,
+.web_modules-layouts-Page-index--root--22FV6 h5:hover .markdownIt-Anchor,
+.web_modules-layouts-Page-index--root--22FV6 h6:hover .markdownIt-Anchor {
+  display: block;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  top: -0.015em
+}
+
+.web_modules-layouts-Page-index--root--22FV6 h1 {
+  font-size: 2.5em;
+  line-height: 1.125em
+}
+
+.web_modules-layouts-Page-index--root--22FV6 h2 {
+  border-bottom: 1px solid gainsboro;
+  font-size: 1.875em;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem
+}
+
+.web_modules-layouts-Page-index--root--22FV6 h3 {
+  font-size: 1.5em
+}
+
+.web_modules-layouts-Page-index--root--22FV6 h4 {
+  font-size: 1.25em
+}
+
+.web_modules-layouts-Page-index--root--22FV6 h5 {
+  font-size: 1.125em
+}
+
+.web_modules-layouts-Page-index--root--22FV6 h6 {
+  font-size: 1em
+}
+
+.web_modules-layouts-Page-index--root--22FV6 p {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Alegreya Sans", sans-serif;
+  -webkit-font-feature-settings: "liga" 1, "kern";
+          font-feature-settings: "liga" 1, "kern";
+  font-size: 1em;
+  line-height: 1.5
+}
+
+.web_modules-layouts-Page-index--root--22FV6 blockquote {
+  border-left: 3px solid gainsboro;
+  padding-left: 10px
+}
+
+.web_modules-layouts-Page-index--root--22FV6 a {
+  color: crimson
+}
+
+.web_modules-layouts-Page-index--root--22FV6 a:hover {
+  color: limegreen
+}
+
+.web_modules-layouts-Page-index--root--22FV6 code {
+  background: whitesmoke;
+  border-radius: 0.25em;
+  display: inline-block;
+  font-family: "Oxygen Mono", monospace;
+  font-size: 0.75em;
+  margin: 0;
+  max-width: 100%;
+  padding: 0 0.25em;
+  vertical-align: middle
+}
+
+.web_modules-layouts-Page-index--root--22FV6 pre {
+  position: relative
+}
+
+.web_modules-layouts-Page-index--root--22FV6 pre::after,
+    .web_modules-layouts-Page-index--root--22FV6 pre::before {
+  background: rgba(245, 245, 245, 0.5);
+  bottom: 0;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1em
+}
+
+.web_modules-layouts-Page-index--root--22FV6 pre::before {
+  background: rgba(245, 245, 245, 0.75);
+  width: 0.5em
+}
+
+.web_modules-layouts-Page-index--root--22FV6 pre code {
+  display: block;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 1em 1.5em 1em 1em
+}
+
+.web_modules-layouts-Page-index--root--22FV6 ul {
+  padding-left: 1.75em
+}
+
+.web_modules-layouts-Page-index--root--22FV6 li {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Alegreya Sans", sans-serif;
+  -webkit-font-feature-settings: "liga" 1, "kern";
+          font-feature-settings: "liga" 1, "kern";
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0
+}
+
+.web_modules-layouts-Page-index--root--22FV6 li ul {
+  margin-top: 0
+}
+
+.web_modules-layouts-Page-index--root--22FV6 img {
+  height: auto;
+  max-width: 100%
+}
+
+@media (min-width: 48.001em) {
+  .web_modules-layouts-Page-index--root--22FV6 {
+    font-size: 1.125rem;
+    padding: 0 2rem;
+  }
+}

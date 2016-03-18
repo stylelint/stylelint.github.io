@@ -9,13 +9,11 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 64px;
   height: 4rem;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0;
-  padding: 0 16px;
   padding: 0 1rem;
 }
 
@@ -24,7 +22,6 @@
 }
 
 .web_modules-Social-index--item--1eiKz:not(:last-child) {
-  margin-right: 24px;
   margin-right: 1.5rem;
 }
 

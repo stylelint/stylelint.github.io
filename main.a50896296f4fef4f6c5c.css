@@ -21,7 +21,6 @@
   -webkit-font-feature-settings: "liga" 1, "kern";
           font-feature-settings: "liga" 1, "kern";
   font-size: 0.75em;
-  padding: 16px;
   padding: 1rem;
   text-decoration: none
 }
@@ -49,9 +48,7 @@
 
 .web_modules-Navigation-index--itemInnerSecondary--2z7mW {
   color: rgba(255, 255, 255, 0.7);
-  padding-left: 32px;
   padding-left: 2rem;
-  padding-right: 32px;
   padding-right: 2rem;
 }
 

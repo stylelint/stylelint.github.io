@@ -1,9 +1,6 @@
 .web_modules-layouts-Page-index--root--22FV6 {
-  margin: 0 auto 32px auto;
   margin: 0 auto 2rem auto;
-  max-width: 768px;
   max-width: 48rem;
-  padding: 0 16px;
   padding: 0 1rem
 }
 
@@ -63,7 +60,6 @@
 .web_modules-layouts-Page-index--root--22FV6 h2 {
   border-bottom: 1px solid gainsboro;
   font-size: 1.875em;
-  padding-bottom: 12px;
   padding-bottom: 0.75rem
 }
 

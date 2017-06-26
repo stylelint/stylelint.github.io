@@ -97,6 +97,7 @@
 <url> <loc>http://stylelint.io/user-guide/rules/function-url-data-uris/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-url-no-scheme-relative/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-url-quotes/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/function-url-scheme-blacklist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-url-scheme-whitelist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-whitelist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-whitespace-after/</loc> </url>
@@ -159,10 +160,15 @@
 <url> <loc>http://stylelint.io/user-guide/rules/selector-list-comma-newline-before/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-list-comma-space-after/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-list-comma-space-before/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/selector-max-attribute/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-max-class/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/selector-max-combinators/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-max-compound-selectors/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-max-empty-lines/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/selector-max-id/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-max-specificity/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/selector-max-type/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/selector-max-universal/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-nested-pattern/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-no-attribute/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-no-combinator/</loc> </url>

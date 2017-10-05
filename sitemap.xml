@@ -6,8 +6,11 @@
 <url> <loc>http://stylelint.io/demo/</loc> </url>
 <url> <loc>http://stylelint.io/developer-guide/</loc> </url>
 <url> <loc>http://stylelint.io/developer-guide/formatters/</loc> </url>
+<url> <loc>http://stylelint.io/developer-guide/issues/</loc> </url>
 <url> <loc>http://stylelint.io/developer-guide/plugins/</loc> </url>
+<url> <loc>http://stylelint.io/developer-guide/prerequisites/</loc> </url>
 <url> <loc>http://stylelint.io/developer-guide/processors/</loc> </url>
+<url> <loc>http://stylelint.io/developer-guide/pull-requests/</loc> </url>
 <url> <loc>http://stylelint.io/developer-guide/releases/</loc> </url>
 <url> <loc>http://stylelint.io/developer-guide/rule-testers/</loc> </url>
 <url> <loc>http://stylelint.io/developer-guide/rules/</loc> </url>

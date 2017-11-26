@@ -410,6 +410,8 @@ body {
     transform: rotate(359deg);
   }
 }
+/* stylelint-disable no-descending-specificity */
+
 .sFWsg {
   display: block;
 }
@@ -460,6 +462,51 @@ body {
   vertical-align: middle;
 }
 
+._30RKo pre {
+  position: relative;
+}
+
+._30RKo pre code {
+  display: block;
+  line-height: 1.5;
+  overflow: auto;
+  padding: 1em 1.5em 1em 1em;
+}
+
+._30RKo pre code::after,
+      ._30RKo pre code::before {
+  background: whitesmoke;
+  bottom: 0;
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1em;
+}
+
+._30RKo pre code::before {
+  background: whitesmoke;
+  opacity: 0.75;
+  width: 0.5em;
+}
+
+._30RKo pre code.valid-pattern {}
+
+._30RKo pre code.valid-pattern,
+        ._30RKo pre code.valid-pattern::before,
+        ._30RKo pre code.valid-pattern::after {
+  background: #eef7ee;
+}
+
+._30RKo pre code.invalid-pattern {}
+
+._30RKo pre code.invalid-pattern,
+        ._30RKo pre code.invalid-pattern::before,
+        ._30RKo pre code.invalid-pattern::after {
+  background: #fee;
+}
+
 ._30RKo h1,
 ._30RKo h2,
 ._30RKo h3,
@@ -473,8 +520,6 @@ body {
   line-height: 1.25;
   padding-right: 1rem;
   position: relative;
-
-  /* stylelint-disable-next-line no-descending-specificity */
 }
 
 ._30RKo h1 .phenomic-HeadingAnchor,

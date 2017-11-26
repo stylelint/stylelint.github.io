@@ -83,6 +83,7 @@
 <url> <loc>http://stylelint.io/user-guide/rules/declaration-property-value-whitelist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/font-family-name-quotes/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/font-family-no-duplicate-names/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/font-family-no-missing-generic-family-keyword/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/font-weight-notation/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-blacklist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-calc-no-unspaced-operator/</loc> </url>
@@ -122,6 +123,7 @@
 <url> <loc>http://stylelint.io/user-guide/rules/media-query-list-comma-space-after/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/media-query-list-comma-space-before/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/no-descending-specificity/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/no-duplicate-at-import-rules/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/no-duplicate-selectors/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/no-empty-source/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/no-eol-whitespace/</loc> </url>

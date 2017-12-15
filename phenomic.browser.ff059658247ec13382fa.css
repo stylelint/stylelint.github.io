@@ -31,10 +31,6 @@
     border-color: limegreen;
     outline: none
 }
-:root #algolia-docsearch::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.7);
-    opacity: 1
-}
 :root #algolia-docsearch:-ms-input-placeholder {
     color: rgba(255, 255, 255, 0.7);
     opacity: 1

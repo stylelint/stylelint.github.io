@@ -147,8 +147,10 @@
 <url> <loc>http://stylelint.io/user-guide/rules/selector-attribute-operator-whitelist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-attribute-quotes/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-class-pattern/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/selector-combinator-blacklist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-combinator-space-after/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-combinator-space-before/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/selector-combinator-whitelist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-descendant-combinator-no-non-space/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-id-pattern/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-list-comma-newline-after/</loc> </url>
@@ -172,9 +174,11 @@
 <url> <loc>http://stylelint.io/user-guide/rules/selector-pseudo-class-no-unknown/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-pseudo-class-parentheses-space-inside/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-pseudo-class-whitelist/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/selector-pseudo-element-blacklist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-pseudo-element-case/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-pseudo-element-colon-notation/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-pseudo-element-no-unknown/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/selector-pseudo-element-whitelist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-type-case/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-type-no-unknown/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/shorthand-property-no-redundant-values/</loc> </url>

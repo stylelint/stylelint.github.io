@@ -163,6 +163,7 @@
 <url> <loc>http://stylelint.io/user-guide/rules/selector-max-compound-selectors/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-max-empty-lines/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-max-id/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/selector-max-pseudo-class/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-max-specificity/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-max-type/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/selector-max-universal/</loc> </url>

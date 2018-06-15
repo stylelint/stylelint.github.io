@@ -104,6 +104,7 @@
 <url> <loc>http://stylelint.io/user-guide/rules/function-whitespace-after/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/indentation/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/keyframe-declaration-no-important/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/keyframes-name-pattern/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/length-zero-no-unit/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/max-empty-lines/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/max-line-length/</loc> </url>
@@ -114,6 +115,7 @@
 <url> <loc>http://stylelint.io/user-guide/rules/media-feature-name-case/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/media-feature-name-no-unknown/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/media-feature-name-no-vendor-prefix/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/media-feature-name-value-whitelist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/media-feature-name-whitelist/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/media-feature-parentheses-space-inside/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/media-feature-range-operator-space-after/</loc> </url>

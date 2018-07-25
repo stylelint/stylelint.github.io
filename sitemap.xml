@@ -106,6 +106,7 @@
 <url> <loc>http://stylelint.io/user-guide/rules/keyframe-declaration-no-important/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/keyframes-name-pattern/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/length-zero-no-unit/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/linebreaks/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/max-empty-lines/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/max-line-length/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/max-nesting-depth/</loc> </url>
@@ -199,4 +200,5 @@
 <url> <loc>http://stylelint.io/user-guide/rules/value-list-comma-space-before/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/value-list-max-empty-lines/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/value-no-vendor-prefix/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/semantic-versioning-policy/</loc> </url>
 </urlset>

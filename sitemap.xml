@@ -128,6 +128,7 @@
 <url> <loc>http://stylelint.io/user-guide/rules/no-descending-specificity/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/no-duplicate-at-import-rules/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/no-duplicate-selectors/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/no-empty-first-line/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/no-empty-source/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/no-eol-whitespace/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/no-extra-semicolons/</loc> </url>

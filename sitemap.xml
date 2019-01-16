@@ -86,6 +86,7 @@
 <url> <loc>http://stylelint.io/user-guide/rules/font-family-no-missing-generic-family-keyword/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/font-weight-notation/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-blacklist/</loc> </url>
+<url> <loc>http://stylelint.io/user-guide/rules/function-calc-no-invalid/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-calc-no-unspaced-operator/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-comma-newline-after/</loc> </url>
 <url> <loc>http://stylelint.io/user-guide/rules/function-comma-newline-before/</loc> </url>

@@ -36,6 +36,7 @@
 <url> <loc>https://stylelint.io/user-guide/rules/at-rule-name-space-after/</loc> </url>
 <url> <loc>https://stylelint.io/user-guide/rules/at-rule-no-unknown/</loc> </url>
 <url> <loc>https://stylelint.io/user-guide/rules/at-rule-no-vendor-prefix/</loc> </url>
+<url> <loc>https://stylelint.io/user-guide/rules/at-rule-property-requirelist/</loc> </url>
 <url> <loc>https://stylelint.io/user-guide/rules/at-rule-semicolon-newline-after/</loc> </url>
 <url> <loc>https://stylelint.io/user-guide/rules/at-rule-semicolon-space-before/</loc> </url>
 <url> <loc>https://stylelint.io/user-guide/rules/at-rule-whitelist/</loc> </url>
